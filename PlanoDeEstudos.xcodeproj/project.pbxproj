@@ -14,6 +14,8 @@
 		A12AC6141F9D1487006EEC7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A12AC6121F9D1487006EEC7B /* LaunchScreen.storyboard */; };
 		A12AC61C1F9D1741006EEC7B /* StudyPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12AC61B1F9D1741006EEC7B /* StudyPlanViewController.swift */; };
 		A12AC61E1F9D18D5006EEC7B /* StudyPlansTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12AC61D1F9D18D5006EEC7B /* StudyPlansTableViewController.swift */; };
+		C3A8D92227FE335D006501CC /* StudyPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A8D92127FE335D006501CC /* StudyPlan.swift */; };
+		C3A8D92427FE3428006501CC /* StudyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A8D92327FE3428006501CC /* StudyManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		A12AC6151F9D1487006EEC7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A12AC61B1F9D1741006EEC7B /* StudyPlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyPlanViewController.swift; sourceTree = "<group>"; };
 		A12AC61D1F9D18D5006EEC7B /* StudyPlansTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyPlansTableViewController.swift; sourceTree = "<group>"; };
+		C3A8D92127FE335D006501CC /* StudyPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyPlan.swift; sourceTree = "<group>"; };
+		C3A8D92327FE3428006501CC /* StudyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				A12AC60D1F9D1487006EEC7B /* Main.storyboard */,
 				A12AC61B1F9D1741006EEC7B /* StudyPlanViewController.swift */,
 				A12AC61D1F9D18D5006EEC7B /* StudyPlansTableViewController.swift */,
+				C3A8D92127FE335D006501CC /* StudyPlan.swift */,
+				C3A8D92327FE3428006501CC /* StudyManager.swift */,
 				A12AC6101F9D1487006EEC7B /* Assets.xcassets */,
 				A12AC6121F9D1487006EEC7B /* LaunchScreen.storyboard */,
 				A12AC6151F9D1487006EEC7B /* Info.plist */,
@@ -143,9 +149,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A12AC60C1F9D1487006EEC7B /* ViewController.swift in Sources */,
+				C3A8D92227FE335D006501CC /* StudyPlan.swift in Sources */,
 				A12AC61C1F9D1741006EEC7B /* StudyPlanViewController.swift in Sources */,
 				A12AC61E1F9D18D5006EEC7B /* StudyPlansTableViewController.swift in Sources */,
 				A12AC60A1F9D1487006EEC7B /* AppDelegate.swift in Sources */,
+				C3A8D92427FE3428006501CC /* StudyManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +227,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -270,7 +278,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
