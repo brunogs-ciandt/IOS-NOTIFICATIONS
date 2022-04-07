@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     let center = UNUserNotificationCenter.current()
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         window?.tintColor = UIColor(named: "main")
         
@@ -41,9 +41,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let cancel = UNNotificationAction(identifier: "Cancel", title: "Cancelar", options: [])
         
         let category = UNNotificationCategory(identifier: "Lembrete", actions: [confirmation, cancel], intentIdentifiers: [], hiddenPreviewsBodyPlaceholder: "", options: [.customDismissAction])
+        
         center.setNotificationCategories([category])
-        
-        
         return true
     }
 
@@ -82,11 +81,13 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
         
         switch response.actionIdentifier {
             case "Confirm":
-                print("Confirmou")
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "StudyReceived"), object: nil, userInfo: ["id": response.notification.request.identifier])
             case "Cancel":
                 print("Cancelou")
             case UNNotificationDefaultActionIdentifier:
-                print("Dismiss notification")
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "StudyReceived"), object: nil, userInfo: ["id": response.notification.request.identifier])
+            
+            print("Dismiss notification")
             default:
                 break
         }
