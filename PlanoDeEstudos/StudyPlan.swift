@@ -2,8 +2,7 @@
 //  StudyPlan.swift
 //  PlanoDeEstudos
 //
-//  Created by administrator on 4/6/22.
-//  Copyright © 2022 Eric Brito. All rights reserved.
+//  Created by administrator
 //
 
 import Foundation
